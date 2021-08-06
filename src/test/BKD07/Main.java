@@ -44,7 +44,7 @@ public class Main {
         	    	  
         	      }
         	      case "3":{
-        	    	  productManager.print();
+        	    	  productManager.printDetails();
         	    	  break;
         	      }
         	      case "4":{

@@ -13,7 +13,7 @@ public void addProduct(Product product) {
 	 this.product.add(product);
 }   
 
-public void print() {
+public void printDetails() {
 	 this.product.forEach(product -> System.out.println(product.toString()));
 }
 
@@ -34,9 +34,9 @@ public void showInfor() {
 
 		@Override
 		public int compare(Product o1, Product o2) {
-		   if(o1.getPrice() > o2.getPrice()) {
+		   if(o1.getPrice() < o2.getPrice()) {
 			   return 1;
-		   } else if (o1.getPrice() < o2.getPrice()) {
+		   } else if (o1.getPrice() > o2.getPrice()) {
 			   return -1;
 		   } else {
 			   return 0;
